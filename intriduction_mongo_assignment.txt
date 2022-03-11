@@ -1,0 +1,226 @@
+db.shawon.insertMany([{
+    'first_name':'shawon',
+'last_name':'biswas',
+'email':'16haw87@gmail.com',
+'gender':'male',
+'ip_address':l4,
+'age':24
+
+},
+
+{
+    'first_name':'srdghyrt',
+'last_name':'biswas',
+'email':'dht',
+'gender':'male',
+'ip_address':l56,
+'age':5
+
+},{
+    'first_name':'ram',
+'last_name':'sarkasrt',
+'email':'16ha@gmail.com',
+'gender':'male',
+'ip_address':l54,
+'age':25
+
+},
+{
+    'first_name':'aman',
+'last_name':'biswas',
+'email':'srieamam@gmail.com',
+'gender':'male',
+'ip_address':35,
+'age':24
+
+},
+{
+    'first_name':'rabin',
+'last_name':'biswas',
+'email':'rabin87@gmail.com',
+'gender':'male',
+'ip_address':84,
+'age':24
+
+},)
+db.shawon.insertMany({
+    'first_name':'amit',
+'last_name':'roy',
+'email':'16amit@gmail.com',
+'gender':'male',
+'ip_address':52,
+'age':28
+
+},
+{
+    'first_name':'sumana',
+'last_name':'mondal',
+'email':'sumana@gmail.com',
+'gender':'female',
+'ip_address':55,
+'age':25
+
+},
+{
+    'first_name':'akash',
+'last_name':'biswas',
+'email':'akash@gmail.com',
+'gender':'male',
+'ip_address':51,
+'age':24
+
+},
+{
+    'first_name':'soheli',
+'last_name':'biswas',
+'email':'soheli@gmail.com',
+'gender':'female',
+'ip_address':325,
+'age':25
+
+},
+{
+    'first_name':'rakesh',
+'last_name':'bepari',
+'email':'rakesh@gmail.com',
+'gender':'male',
+'ip_address':35,
+'age':25
+}])
+db.shawon.findOne()
+{
+    'first_name':'shawon',
+'last_name':'biswas',
+'email':'16haw87@gmail.com',
+'gender':'male',
+'ip_address':l4,
+'age':24
+}
+db.shawon.update({'first_name':'shawon'},{'name':'shimul'})
+{
+    'name':'shimul',
+'last_name':'biswas',
+'email':'16haw87@gmail.com',
+'gender':'male',
+'ip_address':l4,
+'age':24
+}
+db.shawon.updateMany({'age':23},{$set:{'eligible':true})
+{
+    'first_name':'ram',
+'last_name':'sarkasrt',
+'email':'16ha@gmail.com',
+'gender':'male',
+'ip_address':l54,
+'age':25,
+'eligible':true
+}
+,
+{
+    'first_name':'rakesh',
+'last_name':'bepari',
+'email':'rakesh@gmail.com',
+'gender':'male',
+'ip_address':35,
+'age':25,
+'eligible':true
+},
+{
+    'first_name':'soheli',
+'last_name':'biswas',
+'email':'soheli@gmail.com',
+'gender':'female',
+'ip_address':325,
+'age':25,
+'eligible':true
+},{
+    'first_name':'sumana',
+'last_name':'mondal',
+'email':'sumana@gmail.com',
+'gender':'female',
+'ip_address':55,
+'age':25,
+'eligible':true
+}
+db.shawon.remove({'first_name':'rakesh'})
+{
+    'first_name':'shawon',
+'last_name':'biswas',
+'email':'16haw87@gmail.com',
+'gender':'male',
+'ip_address':l4,
+'age':24
+
+},
+
+{
+    'first_name':'srdghyrt',
+'last_name':'biswas',
+'email':'dht',
+'gender':'male',
+'ip_address':l56,
+'age':5
+
+},{
+    'first_name':'ram',
+'last_name':'sarkasrt',
+'email':'16ha@gmail.com',
+'gender':'male',
+'ip_address':l54,
+'age':25
+
+},
+{
+    'first_name':'aman',
+'last_name':'biswas',
+'email':'srieamam@gmail.com',
+'gender':'male',
+'ip_address':35,
+'age':24
+
+},
+{
+    'first_name':'rabin',
+'last_name':'biswas',
+'email':'rabin87@gmail.com',
+'gender':'male',
+'ip_address':84,
+'age':24
+
+},)
+db.shawon.insertMany({
+    'first_name':'amit',
+'last_name':'roy',
+'email':'16amit@gmail.com',
+'gender':'male',
+'ip_address':52,
+'age':28
+
+},
+{
+    'first_name':'sumana',
+'last_name':'mondal',
+'email':'sumana@gmail.com',
+'gender':'female',
+'ip_address':55,
+'age':25
+
+},
+{
+    'first_name':'akash',
+'last_name':'biswas',
+'email':'akash@gmail.com',
+'gender':'male',
+'ip_address':51,
+'age':24
+
+},
+{
+    'first_name':'soheli',
+'last_name':'biswas',
+'email':'soheli@gmail.com',
+'gender':'female',
+'ip_address':325,
+'age':25
+
+}

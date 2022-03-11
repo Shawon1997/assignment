@@ -1,0 +1,21 @@
+db.movie_ass.find().pretty() 
+
+db.movie_ass.find({"movie_name":{$ne:"Kid & I, The"}}).pretty()  
+
+ db.movie_ass.find({"movie_name":"Kid & I, The"}).pretty()  
+
+ db.movie_ass.find({"movie_name":{$ne:"Deception"}}).pretty()   
+
+db.movie_ass.find({"budget":{$gte:"$10000"}}).pretty()   
+
+db.movie_ass.find({"budget":{$lte:"$20000"}}).pretty()   
+
+ db.movie_ass.find({$and:[{"budget":{$gte:"$10000"}},{" production_year":{$gt:2000}}]}).pretty()  
+
+ db.movie_ass.find({$or:[{"budget":{$gte:"$10000"}},{" production_year":{$gt:2000}}]}).pretty()  
+
+db.movie_ass.find({$and:[{" production_year":{$gt:2000}},{" production_year":{$lt:2010}}]}).pretty()  
+
+db.movie_ass.find({}, { "movie_name": -1 }).pretty()
+
+ db.movie_ass.find({" production_year":{$gt:2000}}).skip(20).limit(10).pretty()   
